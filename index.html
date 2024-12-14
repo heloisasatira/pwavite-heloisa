@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="exemplo de fallback">
-    <title>Minha primeira PWA</title>
+    <title>Notícias - PWA</title>
     <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
     <link rel="stylesheet" href="css/style.css" />
     <!--viewport para designers responsivos (mobo), content é a configuração-->
@@ -12,16 +12,19 @@
     <meta name="theme-color" content="white" />
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="favicon.ico">
-    <script type="module" src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </head>
 
-<body class="fullscreen">
-    <div class="container">
-        <h1 class="title">Minha primeira PWA</h1>
-        <div style="text-align: center;">
-            <img src="/images/pwa-icon-256.png" alt="pwa" width="256" height="256">
+<body class="container">
+    <header>
+        <div>
+            <input type="text" id="pesquisa" placeholder="Digite a pesquisa">
+            <button onclick="search()">Buscar Notícias</button>
         </div>
-    </div>
-</body>
+        
+        <h1>Notícias - PWA</h1>
+    </header>
+    <main></main>
 
+</body>
 </html>

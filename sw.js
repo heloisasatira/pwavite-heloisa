@@ -6,7 +6,7 @@ import { ExpirationPlugin } from 'workbox-expiration';
 
 // configurando o cache
 const pageCache = new CacheFirst({
-  cacheName: 'primeira-pwa-cache',
+  cacheName: 'noticias-pwa',
   plugins: [
     new CacheableResponsePlugin({
       statuses: [0, 200],
@@ -53,6 +53,4 @@ const imageRoute = new Route(({ request }) => {
     })
   ]
 }));
-
 registerRoute(imageRoute);
-
